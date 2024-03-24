@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header"><h1>User Details</h1>
+    <button id="showAllUsersBtn">Show All Users</button>
+    </div>
+    <section id="user-details">
+        <input type="text" id="userIdInput" placeholder="Enter User ID">
+        <button id="fetchUserBtn">Fetch User</button>
+        <div id="spinner" class="spinner" style="display: none;"></div>
+    </section>
+    <section id="user-table-section">
+        <table id="userTable">
+            <thead>
+                <tr style="display: contents;">
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Avatar</th>
+                </tr>
+            </thead>
+            <tbody id="userTableBody"></tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
